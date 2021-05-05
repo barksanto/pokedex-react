@@ -17,7 +17,7 @@ const App = () => {
       console.log(query)
       const result = await axios(`https://pokeapi.co/api/v2/pokemon/${query}`)
       if (result.data.is_default) {
-        // console.log(result.data)
+        console.log(result.data)
         setCurrentPokemon(result.data)
       }
       // console.log(result.data)
