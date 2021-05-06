@@ -1,8 +1,10 @@
 import React from 'react'
 import '../styles/SearchedPokemon.css'
+import axios from 'axios'
 
 
 const SearchedPokemon = ({ currentPokemon }) => {
+
   return (currentPokemon.name ?
     (<div class="card-product">
       <img src={currentPokemon.sprites.front_default} />
